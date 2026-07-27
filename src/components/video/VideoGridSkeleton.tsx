@@ -5,7 +5,10 @@ const SKELETON_COUNT = 12;
 
 export default function VideoGridSkeleton() {
   return (
-    <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 w-full">
+    <div
+      data-testid="video-grid-skeleton"
+      className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 w-full"
+    >
       {Array.from({ length: SKELETON_COUNT }).map((_, index) => (
         <VideoCardSkeleton key={index} />
       ))}
