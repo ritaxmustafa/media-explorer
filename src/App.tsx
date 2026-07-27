@@ -1,11 +1,14 @@
+import { useVideos } from "./hooks/useVideos";
+
 function App() {
-  return (
-    <main className="min-h-screen bg-background">
-      <div className="container mx-auto px-4">
-        <h1>Video Browser</h1>
-      </div>
-    </main>
-  );
+  const { data, isLoading, error } = useVideos();
+
+  console.log(data);
+
+  if (isLoading) return <p>Loading...</p>;
+  if (error) return <p>Something went wrong.</p>;
+
+  return <div>API connected successfully.</div>;
 }
 
 export default App;
