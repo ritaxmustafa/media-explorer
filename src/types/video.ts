@@ -1,3 +1,5 @@
+export type FilterKey = "search" | "genre" | "year";
+
 export interface Genre {
   id: number;
   name: string;
