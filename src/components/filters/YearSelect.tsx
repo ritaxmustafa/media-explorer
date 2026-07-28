@@ -14,7 +14,7 @@ export function YearSelect({ value, years, onChange }: YearSelectProps) {
         label: String(year),
         value: String(year),
       }))}
-      placeholder="All years"
+      placeholder="Search by Year..."
       onChange={onChange}
     />
   );
