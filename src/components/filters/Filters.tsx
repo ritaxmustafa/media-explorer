@@ -23,22 +23,22 @@ export function Filters() {
   );
 
   return (
-    <div className="mb-8 flex flex-col items-start gap-2 md:flex-row">
+    <div className="flex flex-col items-start gap-3 md:flex-row">
       <SearchInput
         value={search}
         onChange={(value) => setFilter("search", value)}
-      />
-
-      <GenreSelect
-        value={genre}
-        genres={availableGenres}
-        onChange={(value) => setFilter("genre", value)}
       />
 
       <YearSelect
         value={year}
         years={availableYears}
         onChange={(value) => setFilter("year", value)}
+      />
+
+      <GenreSelect
+        value={genre}
+        genres={availableGenres}
+        onChange={(value) => setFilter("genre", value)}
       />
     </div>
   );

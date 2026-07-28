@@ -16,7 +16,7 @@ export function GenreSelect({ value, genres, onChange }: GenreSelectProps) {
         label: genre.name,
         value: String(genre.id),
       }))}
-      placeholder="Select genres"
+      placeholder="Search by Genre..."
       onChange={onChange}
     />
   );

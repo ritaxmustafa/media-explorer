@@ -15,13 +15,13 @@ function App() {
 
   return (
     <div className="flex h-dvh flex-col">
-      <header className="container mx-auto flex shrink-0 flex-col items-center px-4 pt-10 pb-2">
+      <header className="flex shrink-0 flex-col items-center border-b border-border px-4 pt-10 pb-6">
         <h1 className="mb-6 text-2xl font-bold">Video Browser</h1>
         <Filters />
       </header>
 
       <main ref={scrollRef} className="flex-1 overflow-y-auto">
-        <div className="container mx-auto px-4 pb-10">
+        <div className="container mx-auto px-4 pt-6 pb-10">
           <VideoGrid />
         </div>
       </main>

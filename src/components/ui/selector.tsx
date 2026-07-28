@@ -54,7 +54,7 @@ export function CustomSelect(props: CustomSelectProps) {
           render={
             <Button
               variant="outline"
-              className="w-[150px] justify-between rounded-none text-gray-400 text-sm font-normal"
+              className="w-[170px] justify-between rounded-md text-gray-400 text-sm font-normal whitespace-nowrap"
             />
           }
         >
@@ -110,7 +110,7 @@ export function CustomSelect(props: CustomSelectProps) {
       </Popover>
 
       {props.isMulti && (
-        <div className="flex flex-wrap w-full gap-2 max-w-[150px] ">
+        <div className="flex flex-wrap w-full gap-2 max-w-[170px]">
           {selectedOptions.map((option) => (
             <div
               key={option.value}

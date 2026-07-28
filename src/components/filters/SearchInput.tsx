@@ -18,8 +18,8 @@ export function SearchInput({ value, onChange }: SearchInputProps) {
 
   return (
     <Input
-      className="border rounded p-2 py-4 w-[150px] rounded-none"
-      placeholder="Search videos..."
+      className="w-[170px] rounded-md"
+      placeholder="Search Video..."
       aria-label="Search videos by artist or title"
       value={inputValue}
       onChange={(e) => setInputValue(e.target.value)}
